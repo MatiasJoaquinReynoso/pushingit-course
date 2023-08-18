@@ -1,6 +1,6 @@
-const constants = require('../support/constants');
+describe('Esperas', () => {
+    const TIMEOUT = 10000;
 
-describe('Esoeras', () => {
     beforeEach('', () => {
         cy.visit('');
         cy.get('[id="registertoggle"]').dblclick();
@@ -16,10 +16,10 @@ describe('Esoeras', () => {
     })
 
     it('Espera con timeout', () => {
-        cy.get('#message', { timeout: constants.TIMEOUT }).should('have.text', 'You have waited for ten seconds, CONGRATULATIONS')
+        cy.get('#message', { timeout: TIMEOUT }).should('have.text', 'You have waited for ten seconds, CONGRATULATIONS')
     })
 
     it('Espera con timeout', () => {
-        cy.get('#message', { timeout: constants.TIMEOUT * 2 }).should('have.text', 'You are a man of patience and have waited fifteen seconds')
+        cy.get('#message', { timeout: TIMEOUT * 2 }).should('have.text', 'You are a man of patience and have waited fifteen seconds')
     })
 });
