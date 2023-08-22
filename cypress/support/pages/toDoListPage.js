@@ -17,6 +17,6 @@ export class ToDoListPage {
     };
 
     obtenerTarea(tarea) {
-       return cy.contains(tarea);
+        return cy.contains(tarea);
     };
 };

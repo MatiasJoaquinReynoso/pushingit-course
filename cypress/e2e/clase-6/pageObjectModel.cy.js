@@ -5,6 +5,7 @@ import { ToDoListPage } from "../../support/pages/toDoListPage";
 
 describe('Page object model', () => {
     let data;
+    // INSTANCIAMOS LAS PAGES
     const loginPage = new LoginPage();
     const homePage = new HomePage();
     const toDoListPage = new ToDoListPage();

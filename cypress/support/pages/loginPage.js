@@ -4,7 +4,7 @@ export class LoginPage {
         this.passInput = '#pass';
         this.loginButton = '#submitForm';
     }
-
+    // creamos METODOS que a su vez llevan parametros ej (usuario)
     escribirUsuario(usuario) {
         cy.get(this.userInput).type(usuario);
     };
